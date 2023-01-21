@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		CC2B6FE52979B47E00F72CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B6FE42979B47E00F72CA9 /* AppDelegate.swift */; };
 		CC2B6FE72979B47E00F72CA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B6FE62979B47E00F72CA9 /* SceneDelegate.swift */; };
-		CC2B6FE92979B47E00F72CA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B6FE82979B47E00F72CA9 /* ViewController.swift */; };
+		CC2B6FE92979B47E00F72CA9 /* NoteCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B6FE82979B47E00F72CA9 /* NoteCategoryViewController.swift */; };
 		CC2B6FEC2979B47E00F72CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2B6FEA2979B47E00F72CA9 /* Main.storyboard */; };
-		CC2B6FEF2979B47E00F72CA9 /* Notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC2B6FED2979B47E00F72CA9 /* Notepad.xcdatamodeld */; };
 		CC2B6FF12979B47F00F72CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2B6FF02979B47F00F72CA9 /* Assets.xcassets */; };
 		CC2B6FF42979B47F00F72CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2B6FF22979B47F00F72CA9 /* LaunchScreen.storyboard */; };
+		CC5F74DF297A1A2300443B10 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5F74DE297A1A2300443B10 /* NoteViewController.swift */; };
+		CC98E80B297A132B00F554B1 /* Notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC98E809297A132B00F554B1 /* Notepad.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC2B6FE12979B47E00F72CA9 /* Notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2B6FE42979B47E00F72CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2B6FE62979B47E00F72CA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC2B6FE82979B47E00F72CA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC2B6FE82979B47E00F72CA9 /* NoteCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCategoryViewController.swift; sourceTree = "<group>"; };
 		CC2B6FEB2979B47E00F72CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC2B6FEE2979B47E00F72CA9 /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 		CC2B6FF02979B47F00F72CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC2B6FF32979B47F00F72CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC2B6FF52979B47F00F72CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5F74DE297A1A2300443B10 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		CC98E80A297A132B00F554B1 /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0236512979C06500DFB8EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC98E809297A132B00F554B1 /* Notepad.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC0236522979C06E00DFB8EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B6FE82979B47E00F72CA9 /* NoteCategoryViewController.swift */,
+				CC5F74DE297A1A2300443B10 /* NoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC0236532979C07500DFB8EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B6FEA2979B47E00F72CA9 /* Main.storyboard */,
+				CC2B6FF22979B47F00F72CA9 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CC2B6FD82979B47E00F72CA9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +88,11 @@
 			children = (
 				CC2B6FE42979B47E00F72CA9 /* AppDelegate.swift */,
 				CC2B6FE62979B47E00F72CA9 /* SceneDelegate.swift */,
-				CC2B6FE82979B47E00F72CA9 /* ViewController.swift */,
-				CC2B6FEA2979B47E00F72CA9 /* Main.storyboard */,
+				CC0236512979C06500DFB8EA /* Models */,
+				CC0236522979C06E00DFB8EA /* Controllers */,
+				CC0236532979C07500DFB8EA /* Views */,
 				CC2B6FF02979B47F00F72CA9 /* Assets.xcassets */,
-				CC2B6FF22979B47F00F72CA9 /* LaunchScreen.storyboard */,
 				CC2B6FF52979B47F00F72CA9 /* Info.plist */,
-				CC2B6FED2979B47E00F72CA9 /* Notepad.xcdatamodeld */,
 			);
 			path = Notepad;
 			sourceTree = "<group>";
@@ -141,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2B6FE92979B47E00F72CA9 /* ViewController.swift in Sources */,
+				CC2B6FE92979B47E00F72CA9 /* NoteCategoryViewController.swift in Sources */,
 				CC2B6FE52979B47E00F72CA9 /* AppDelegate.swift in Sources */,
 				CC2B6FE72979B47E00F72CA9 /* SceneDelegate.swift in Sources */,
-				CC2B6FEF2979B47E00F72CA9 /* Notepad.xcdatamodeld in Sources */,
+				CC5F74DF297A1A2300443B10 /* NoteViewController.swift in Sources */,
+				CC98E80B297A132B00F554B1 /* Notepad.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +392,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CC2B6FED2979B47E00F72CA9 /* Notepad.xcdatamodeld */ = {
+		CC98E809297A132B00F554B1 /* Notepad.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CC2B6FEE2979B47E00F72CA9 /* Notepad.xcdatamodel */,
+				CC98E80A297A132B00F554B1 /* Notepad.xcdatamodel */,
 			);
-			currentVersion = CC2B6FEE2979B47E00F72CA9 /* Notepad.xcdatamodel */;
+			currentVersion = CC98E80A297A132B00F554B1 /* Notepad.xcdatamodel */;
 			path = Notepad.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
